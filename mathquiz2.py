@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import time
 from random import *
 def addition():
@@ -11,7 +12,7 @@ def addition():
 		answer = int(input('{} + {} = '.format(num1, num2)))
 		numberofquestions -= 1
 		if answer == num1 + num2:
-		right += 1
+			right += 1
 		if numberofquestions == 0:
 			print ('Correct, goodbye!')
 			time.sleep(2)
@@ -19,7 +20,7 @@ def addition():
 		else:
 			print('Correct!')
 		if answer != num1 + num2:
-		wrong += 1
+			wrong += 1
 		if numberofquestions == 0:
 			print ('Sorry, incorrect. Thanks for trying!')
 			time.sleep(2)
@@ -37,7 +38,7 @@ def subtraction():
 		answer = int(input('{} + {} = '.format(num1, num2)))
 		numberofquestions -= 1
 		if answer == num1 - num2:
-		right += 1
+			right += 1
 		if numberofquestions == 0:
 			print ('Correct, goodbye!')
 			time.sleep(2)
@@ -45,7 +46,7 @@ def subtraction():
 		else:
 			print('Correct!')
 		if answer != num1 + num2:
-		wrong += 1
+			wrong += 1
 		if numberofquestions == 0:
 			print ('Sorry, incorrect. Thanks for trying!')
 			time.sleep(2)
@@ -63,7 +64,7 @@ def multiplication():
 		answer = int(input('{} * {} = '.format(num1, num2)))
 		numberofquestions -= 1
 		if answer == num1 * num2:
-		right += 1
+			right += 1
 		if numberofquestions == 0:
 			print ('Correct, goodbye!')
 			time.sleep(2)
@@ -71,7 +72,7 @@ def multiplication():
 		else:
 			print('Correct!')
 		if answer != num1 * num2:
-		wrong += 1
+			wrong += 1
 		if numberofquestions == 0:
 			print ('Sorry, incorrect. Thanks for trying!')
 			time.sleep(2)
@@ -92,7 +93,7 @@ def divsion():
 		answer = int(input('{} / {} = '.format(num1, num2)))
 		numberofquestions -= 1
 		if answer == round(num1 / num2, 1):
-		right += 1
+			right += 1
 		if numberofquestions == 0:
 			print ('Correct, goodbye!')
 			time.sleep(2)
@@ -100,7 +101,7 @@ def divsion():
 		else:
 			print('Correct!')
 		if answer != round(num1 / num2, 1):
-		wrong += 1
+			wrong += 1
 		if numberofquestions == 0:
 			print ('Sorry, incorrect. Thanks for trying!')
 			time.sleep(2)

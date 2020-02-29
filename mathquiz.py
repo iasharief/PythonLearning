@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import time
 from random import *
 def addition(x):
@@ -12,19 +13,19 @@ def addition(x):
 		if answer == num1 + num2:
 			right += 1
 			if x == 0:
-				print ('Correct, goodbye!')
+				print('Correct, goodbye!')
 				time.sleep(2)
 				print('You got {} out of {} correct. Good work.'.format(right, lee_number))
 			else:
 				print('Correct!')
-			if answer != num1 + num2:
-				wrong += 1
-				if x == 0:
-					print ('Sorry, incorrect. Thanks for trying!')
-					time.sleep(2)
-					print('You got {} out of {} correct. Good work.'.format(right, lee_number))
-				else:
-					print('Incorrect, I am rooting for you! \nLet\'s get the next one one right, ok?')
+		if answer != num1 + num2:
+			wrong += 1
+			if x == 0:
+				print('Sorry, incorrect. Thanks for trying!')
+				time.sleep(2)
+				print('You got {} out of {} correct. Good work.'.format(right, lee_number))
+			else:
+				print('Incorrect, I am rooting for you! \nLet\'s get the next one one right, ok?')
 def subtraction(x):
 	right = 0 
 	wrong = 0
@@ -32,7 +33,7 @@ def subtraction(x):
 	while x > 0:
 		num1 = randint(500, 1000)
 		num2 = randint(1, 500)
-		answer = int(input('{} + {} = '.format(num1, num2)))
+		answer = int(input('{} - {} = '.format(num1, num2)))
 		x -= 1
 		if answer == num1 - num2:
 			right += 1
@@ -43,7 +44,7 @@ def subtraction(x):
 			else:
 				print('Correct!')
 
-		if answer != num1 + num2:
+		if answer != num1 - num2:
 			wrong += 1
 			if x == 0:
 				print ('Sorry, incorrect. Thanks for trying!')
@@ -115,10 +116,8 @@ num_of_questions = int(input('How many questions do you want?'))
 if operation == 1:
 	addition(num_of_questions)
 if operation == 2:
-		subtraction(num_of_questions)
+	subtraction(num_of_questions)
 if operation == 3:
-		multiplication(num_of_questions)
+	multiplication(num_of_questions)
 if operation == 4:
-		divsion(num_of_questions)
-else:
-		print('Invalid response.')
+	divsion(num_of_questions)
